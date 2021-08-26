@@ -3,7 +3,15 @@
 
 name: Gradle Package
 
-on: [push, pull_request]
+on: 
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+    - 'master' 
+    - 'junit4'
+    - 'testng'
 
 jobs:
   build:
